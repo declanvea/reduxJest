@@ -17,7 +17,6 @@ describe("CREATE_TODO", function () {
     })
 })
 
-// still not working
 describe("TOGGLE_TODO", function () {
   test('toggles a todo.cone (true/false)', function () {
     const initialState = {todos: [{id: 1, done: false, text: "Test"}]};
