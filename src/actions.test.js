@@ -15,22 +15,20 @@ describe('actions', () => {
 
 describe('actions', () => {
   it('should toggle an action', () => {
-    const payload = 'Finish docs'
     const expectedAction = {
       type: actions.TOGGLE_TODO,
-      payload
+      payload: 1
     }
-    expect(actions.toggleTodo(payload)).toEqual(expectedAction)
+    expect(actions.toggleTodo(1)).toEqual(expectedAction)
   })
 })
 
 describe('actions', () => {
   it('should filter an action', () => {
-    const payload = 'Finish docs'
     const expectedAction = {
       type: actions.FILTER_TODOS,
-      payload
+      payload: 'completed'
     }
-    expect(actions.filterTodos(payload)).toEqual(expectedAction)
+    expect(actions.filterTodos('completed')).toEqual(expectedAction)
   })
 })
